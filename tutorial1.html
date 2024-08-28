@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive Designのため-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Using Tailwind via CDN-->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="bg-yellow-300 p-4">
+        <nav class="flex justify-between container mx-auto items-center">
+            <div class="text-4xl">TailwindCss Tutorial</div>
+            <div class="space-x-12 font-bold">
+                <a href="" class="hover:text-green-200 transiton-all duration-300">ホーム</a>
+                <a href="" class="hover:text-green-200 transiton-all duration-300">ブログ</a>
+                <a href="" class="hover:text-green-200 transiton-all duration-300">お問い合わせ</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- <div class="bg-[url('./img/main-bg.jpg')] min-h-screen"></div>
+        <div class="bg-[url('img/main-bg.jpg')] min-h-screen"></div> -->
+        <div class="min-h-screen bg-cover bg-center object-cover" style="background-image: url('img/main-bg.jpg');">
+            <div class="md:flex container mx-auto md:justify-around py-60 md:py-80">
+                <div class="flex flex-col text-center md:text-left">
+                    <h1 class="text-4xl sm:text-5xl font-bold">楽しく勉強しよう！！</h1>
+                    <p class="text-xl mb-10">TailwindCssでCSSスタイリングを加速させる。</p>
+                    <a href="" class="px-6 py-3 bg-green-600 rounded-md text-white hover:bg-green-800 cursor-pointer transition-all duration-300 w-max self-center md:self-start">詳しく見る</a>
+                </div>
+                <div class="w-40 h-40">
+                    <img src="./img/logo.png" alt="" class="mx-auto mt-24 md:mt-0">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
